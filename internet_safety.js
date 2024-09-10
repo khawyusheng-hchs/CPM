@@ -13,3 +13,10 @@ function displayRandomQuote() {
 
 // Call the function to display a quote on page load
 window.onload = displayRandomQuote;
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.querySelector('body');
+
+darkModeToggle.addEventListener('change', () => {
+  body.classList.toggle('dark-mode');
+});
