@@ -2,6 +2,7 @@
 body {
     font-family: 'Fjalla One', sans-serif;
     margin: 1rem; /* Reduce padding around the body */
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
 }
 
 /* Navbar Styles */
