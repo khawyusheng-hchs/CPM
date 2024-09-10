@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-  background-color: #4CAF50;
+  background-color: #494a49;
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@ body.dark-mode .navbar a {
 }
 
 body.dark-mode .navbar a:hover {
-  background-color: #555;
+  background-color: #494a49;
 }
 
 body.dark-mode .navbar a.active {
