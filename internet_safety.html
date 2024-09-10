@@ -10,8 +10,15 @@
   <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="quiz.html">Quiz</a>
-    <a href="info-common-attacks.html">Info</a>
-    <a href="internet_safety.html" class="active">Internet Safety</a>
+    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Info</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="info-common-attacks.html">Common Attacks and Malware</a></li>
+      <li><a class="dropdown-item" href="internet_safety.html">Internet Safety</a></li>
+    </ul>
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
   </nav>
 
   <main class="content">
