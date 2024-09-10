@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Safety: Common Attacks and Prevention</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body>
+  <header>
+    <h1>Internet Safety</h1>
+  </header>
+  <main>
+    <section id="common-attacks">
+      <h2>Common Internet Attacks</h2>
+      <ul>
+        <li>**Phishing:** <p>... Explain phishing attacks and prevention methods ...</p></li>
+        <li>**Malware:** <p>... Explain malware types and prevention methods ...</p></li>
+        <li>**Ransomware:** <p>... Explain ransomware attacks and prevention methods ...</p></li>
+        </ul>
+    </section>
+    <section id="prevention-tips">
+      <h2>Prevention Tips</h2>
+      <ul>
+        <li>Use strong, unique passwords</li>
+        <li>Keep software updated</li>
+        <li>Be cautious of suspicious emails and links</li>
+        </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 GuardianNet</p>
+  </footer>
+</body>
+</html>
