@@ -1,156 +1,156 @@
 /* General Styles */
 body {
-    font-family: 'Fjalla One', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .navbar-toggler-icon {
-    color: #fff;
+    color: #fff;
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
+    color: #fff;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: #666;
+    color: #666;
 }
 
 .dropdown-menu {
-    background-color: #222;
-    color: #fff;
+    background-color: #222;
+    color: #fff;
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #333;
+    background-color: #333;
 }
 
 /* Info Section Styles */
 .info-section {
-    padding: 2rem;
-    margin: 2rem auto;
-    background-color: #fff;
-    border-radius: 5px;
-    text-align: justify;
-    max-width: 800px;
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: justify;
+    max-width: 800px;
 }
 
 .info-section h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .info-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .info-section p {
-    line-height: 1.6;
+    line-height: 1.6;
 }
 
 .info-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .info-section img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
 }
 
 /* Dark Mode Toggle Button Styles */
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 .switch input {
-    display: none;
+    display: none;
 }
 
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid #ccc;
-    border-radius: 34px;
-    background-color: #ccc;
-    transition: .4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 34px;
+    background-color: #ccc;
+    transition: .4s;
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #fff;
-    transition: .4s;
-    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%;
 }
 
 .switch input:checked + .slider {
-    background-color: #666;
+    background-color: #666;
 }
 
 .switch input:checked + .slider:before {
-    transform: translateX(26px);
-    background-color: #fff;
+    transform: translateX(26px);
+    background-color: #fff;
 }
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121212;
-    color: #fff;
+    background-color: #121212;
+    color: #fff;
 }
 
 body.dark-mode .navbar {
-    background-color: #333;
+    background-color: #333;
 }
 
 body.dark-mode .navbar-nav .nav-link:hover,
 body.dark-mode .navbar-nav .nav-link.active {
-    color: #fff;
+    color: #fff;
 }
 
 body.dark-mode .dropdown-menu {
-    background-color: #333;
+    background-color: #333;
 }
 
 body.dark-mode .dropdown-menu .dropdown-item:hover {
-    background-color: #444;
+    background-color: #444;
 }
 
 body.dark-mode .info-section {
-    background-color: #333;
-    color: #fff; /* Added to set text color to white in dark mode */
+    background-color: #333;
+    color: #fff; /* Added to set text color to white in dark mode */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .info-section {
-        padding: 1rem;
-        margin: 1rem;
-    }
+    .info-section {
+        padding: 1rem;
+        margin: 1rem;
+    }
 }
