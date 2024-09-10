@@ -4,42 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internet Safety: Common Attacks and Prevention</title>
-  <link rel="stylesheet" href="internet_safety.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="bg-dark text-light p-3">
     <h1>Internet Safety</h1>
-    <section id="quote"></section>
+    <section id="quote" class="text-center"></section>
   </header>
-  <main>
-    <section id="common-attacks">
+  <main class="container mt-4">
+    <section id="common-attacks" class="mb-4">
       <h2>Common Internet Attacks</h2>
-      <ul>
-        <li>**Phishing:** <p>... Explain phishing attacks and prevention methods ...</p></li>
-        <li>**Malware:** <p>... Explain malware types and prevention methods ...</p></li>
-        <li>**Ransomware:** <p>... Explain ransomware attacks and prevention methods ...</p></li>
-        <li>**DDoS Attacks:** <p>Prevention methods: Use a DDoS protection service, configure network firewalls, and implement rate limiting.</p></li>
-        <li>**Brute Force Attacks:** <p>Prevention methods: Use strong, unique passwords, enable multi-factor authentication, and limit login attempts.</p></li>
-        <li>**SQL Injections:** <p>Prevention methods: Validate user input, use parameterized queries, and keep software up-to-date.</p></li>
-        <li>**Spoofing:** <p>Prevention methods: Verify sender addresses, use email authentication protocols, and be cautious of unsolicited messages.</p></li>
-        <li>**Rainbow Table Attacks:** <p>Prevention methods: Use strong, unique passwords, avoid common passwords, and enable password hashing algorithms.</p></li>
-        <li>**Scams:** <p>Prevention methods: Be cautious of unsolicited offers, verify information, and never share personal or financial details with unknown individuals.</p></li>
-      </ul>
+      <ul class="list-unstyled">
+        <li class="mb-3">
+          <h3 class="text-primary">Phishing</h3>
+          <p>... Explain phishing attacks and prevention methods ...</p>
+        </li>
+        <li class="mb-3">
+          <h3 class="text-primary">Malware</h3>
+          <p>... Explain malware types and prevention methods ...</p>
+        </li>
+        <li class="mb-3">
+          <h3 class="text-primary">Ransomware</h3>
+          <p>... Explain ransomware attacks and prevention methods ...</p>
+        </li>
+        <li class="mb-3">
+          <h3 class="text-primary">DDoS Attacks</h3>
+          <p>Prevention methods: Use a DDoS protection service, configure network firewalls, and implement rate limiting.</p>
+        </li>
+        </ul>
     </section>
-    <section id="prevention-tips">
+    <section id="prevention-tips" class="mb-4">
       <h2>Prevention Tips</h2>
-      <ul>
-        <li>Use strong, unique passwords</li>
-        <li>Keep software updated</li>
-        <li>Be cautious of suspicious emails and links</li>
-        <li>Use antivirus and anti-malware software</li>
-        <li>Enable two-factor authentication</li>
-        <li>Back up your data regularly</li>
-        <li>Be mindful of public Wi-Fi networks</li>
+      <ul class="list-unstyled">
+        <li class="mb-3">Use strong, unique passwords</li>
+        <li class="mb-3">Keep software updated</li>
+        <li class="mb-3">Be cautious of suspicious emails and links</li>
+        <li class="mb-3">Use antivirus and anti-malware software</li>
+        <li class="mb-3">Enable two-factor authentication</li>
+        <li class="mb-3">Back up your data regularly</li>
+        <li class="mb-3">Be mindful of public Wi-Fi networks</li>
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="bg-dark text-light p-3 text-center">
     <p>&copy; 2024 GuardianNet</p>
   </footer>
   <script src="internet_safety.js"></script>
