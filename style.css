@@ -1,47 +1,44 @@
 /* General Styles */
 body {
     font-family: 'Fjalla One', sans-serif;
-    margin: 0;
-    padding: 2rem; /* Increase padding around the body */
+    margin: 1rem; /* Reduce padding around the body */
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem 2rem; /* Increase horizontal padding in navbar */
+    padding: 0.5rem 1rem; /* Reduce padding in navbar */
 }
 
 .navbar-nav .nav-link {
-    padding: 1rem 1.5rem; /* Increase padding in navigation links */
+    padding: 0.75rem 1rem; /* Reduce padding in navigation links */
 }
 
 /* Info Section Styles */
 .info-section {
-    padding: 4rem; /* Increase padding around the info section */
+    padding: 1rem; /* Reduce padding around the info section */
 }
 
 .info-section h1,
 .info-section h2 {
-    margin-bottom: 2rem; /* Increase margin between headings and content */
+    margin-bottom: 0.8rem; /* Reduce margin between headings and content */
 }
 
 .info-section p {
-    margin-bottom: 1.5rem; /* Increase margin between paragraphs */
+    margin-bottom: 0.6rem; /* Reduce margin between paragraphs */
 }
 
 .info-section ul {
-    padding-left: 3rem; /* Increase padding for the list */
+    padding-left: 1rem; /* Reduce padding for the list */
 }
 
 /* Malware Section Styles */
 .malware-section {
-    padding: 2rem; /* Increase padding around the malware section */
+    padding: 1rem; /* Reduce padding around the malware section */
 }
 
 /* Security Expert Section Styles */
 .security-expert-section {
-    padding: 2rem; /* Increase padding around the security expert section */
+    padding: 1rem; /* Reduce padding around the security expert section */
 }
 
 /* Dark Mode Toggle Button Styles */
