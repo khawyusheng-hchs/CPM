@@ -23,6 +23,9 @@ body {
         font-size: 1.5rem;
         font-weight: bold;
     }
+    .dropdown-menu {
+        display: none; /* Ensure dropdown is initially hidden */
+    }
     .dropdown:hover .dropdown-menu {
         display: block;
     }
