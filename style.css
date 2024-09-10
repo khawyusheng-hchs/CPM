@@ -2,76 +2,46 @@
 body {
     font-family: 'Fjalla One', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 2rem; /* Increase padding around the body */
 }
 
 /* Navbar Styles */
 .navbar {
     background-color: #222;
     color: #fff;
-    padding: 1rem 0;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar-toggler-icon {
-    color: #fff;
+    padding: 1rem 2rem; /* Increase horizontal padding in navbar */
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: #666;
-}
-
-.dropdown-menu {
-    background-color: #222;
-    color: #fff;
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background-color: #333;
+    padding: 1rem 1.5rem; /* Increase padding in navigation links */
 }
 
 /* Info Section Styles */
 .info-section {
-    padding: 2rem;
-    margin: 2rem auto;
-    background-color: #fff;
-    border-radius: 5px;
-    text-align: justify;
-    max-width: 800px;
+    padding: 4rem; /* Increase padding around the info section */
 }
 
-.info-section h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
+.info-section h1,
 .info-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem; /* Increase margin between headings and content */
 }
 
 .info-section p {
-    line-height: 1.6;
+    margin-bottom: 1.5rem; /* Increase margin between paragraphs */
 }
 
 .info-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 3rem; /* Increase padding for the list */
 }
 
-.info-section img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
+/* Malware Section Styles */
+.malware-section {
+    padding: 2rem; /* Increase padding around the malware section */
+}
+
+/* Security Expert Section Styles */
+.security-expert-section {
+    padding: 2rem; /* Increase padding around the security expert section */
 }
 
 /* Dark Mode Toggle Button Styles */
