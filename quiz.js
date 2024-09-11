@@ -16,8 +16,8 @@ const questions = [
       { text: "Click on suspicious links", correct: false },
       { text: "Use strong, unique passwords", correct: true },
     ]
-  },
-    {
+  },
+    {
     question: "What is SQL injection?",
     answers: [
       { text: "A type of malware that replicates itself", correct: false },
@@ -25,7 +25,7 @@ const questions = [
       { text: "A type of phishing scam", correct: false },
       { text: "A method of encrypting data", correct: false },
     ]
-  },
+  },
 ];
 
 const questionElement = document.getElementById('question');
