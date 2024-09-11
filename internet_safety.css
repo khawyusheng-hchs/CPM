@@ -9,6 +9,8 @@ body {
 .navbar {
   background-color: #494a49;
   overflow: hidden;
+  display: flex; /* Use flexbox for better layout */
+  justify-content: space-between; /* Align items to the right */
 }
 
 .navbar a {
@@ -28,6 +30,35 @@ body {
 .navbar a.active {
   background-color: #494a49;
   color: white;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  position: relative; /* Necessary for dropdown positioning */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .content {
@@ -71,6 +102,19 @@ body.dark-mode .navbar a:hover {
 body.dark-mode .navbar a.active {
   background-color: #555;
   color: #fff;
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .dropdown-menu a {
+  color: #fff;
+}
+
+body.dark-mode .dropdown-menu a:hover {
+  background-color: #444;
 }
 
 .switch {
