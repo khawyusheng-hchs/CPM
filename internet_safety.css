@@ -63,6 +63,13 @@ body {
 
 .content {
   padding: 20px;
+  display: flex; /* Use flexbox for two-column layout */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.content-column {
+  flex: 1; /* Ensure columns take up equal space */
+  margin-bottom: 20px;
 }
 
 h1 {
