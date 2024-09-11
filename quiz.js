@@ -32,58 +32,49 @@ const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('choices');
 const nextButton = document.getElementById('next-button');
 const modeToggle = document.getElementById('mode-toggle');
-const scoreElement = document.getElementById('score'); // Add a score element
 
 let currentQuestionIndex = 0;
-let score = 0;
 
 function startQuiz() {
-  currentQuestionIndex = 0;
-  score = 0; // Initialize score
-  nextButton.classList.add('hide');
-  showQuestion(questions[currentQuestionIndex]);
+  currentQuestionIndex = 0;
+  nextButton.classList.add('hide');
+  showQuestion(questions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
-  questionElement.innerText = question.question;   
-
-  answerButtonsElement.innerHTML = '';
-  question.answers.forEach(answer => {
-    const button = document.createElement('button');
-    button.innerText = answer.text;
-    button.classList.add('choice');   
-
-    button.addEventListener('click', () => selectAnswer(answer));
-    answerButtonsElement.appendChild(button);
-  });
+  questionElement.innerText = question.question;
+  answerButtonsElement.innerHTML = '';
+  question.answers.forEach(answer => {
+    const button = document.createElement('button');
+    button.innerText = answer.text;
+    button.classList.add('choice');
+    button.addEventListener('click', () => selectAnswer(answer));
+    answerButtonsElement.appendChild(button);
+  });
 }
 
 function selectAnswer(answer) {
-  const correct = answer.correct;
-  if (correct) {
-    score++;   
-
-    alert("Correct!");
-  } else {
-    alert("Wrong!");
-  }
-  nextButton.classList.remove('hide');
+  const correct = answer.correct;
+  if (correct) {
+    alert("Correct!");
+  } else {
+    alert("Wrong!");
+  }
+  nextButton.classList.remove('hide');
 }
 
 nextButton.addEventListener('click', () => {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
-    showQuestion(questions[currentQuestionIndex]);   
-
-  } else {
-    alert('You   
- have completed the quiz! Your score is: ' + score);
-  }
-  nextButton.classList.add('hide');
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    showQuestion(questions[currentQuestionIndex]);
+  } else {
+    alert('You have completed the quiz!');
+  }
+  nextButton.classList.add('hide');
 });
 
 modeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
+  document.body.classList.toggle('dark-mode');
 });
 
 startQuiz();
