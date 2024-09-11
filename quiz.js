@@ -47,7 +47,8 @@ const quizData = [
 ];
 
 const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('choices');
+const answerButtonsElement = document.getElementById('choices');   
+
 const nextButton = document.getElementById('next-button');
 const modeToggle = document.getElementById('mode-toggle');
 
@@ -59,13 +60,15 @@ function startQuiz() {
   showQuestion(questions[currentQuestionIndex]);
 }
 
-function showQuestion(question) {
+function showQuestion(question)   
+ {
   questionElement.innerText = question.question;
   answerButtonsElement.innerHTML = '';
   question.answers.forEach(answer => {
     const button = document.createElement('button');
     button.innerText = answer.text;
-    button.classList.add('choice');
+    button.classList.add('choice');   
+
     button.addEventListener('click', () => selectAnswer(answer));
     answerButtonsElement.appendChild(button);
   });
@@ -73,7 +76,8 @@ function showQuestion(question) {
 
 function selectAnswer(answer) {
   const correct = answer.correct;
-  if (correct) {
+  if   
+ (correct) {
     alert("Correct!");
   } else {
     alert("Wrong!");
@@ -84,9 +88,11 @@ function selectAnswer(answer) {
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
-    showQuestion(questions[currentQuestionIndex]);
+    showQuestion(questions[currentQuestionIndex]);   
+
   } else {
-    alert('You have completed the quiz!');
+    alert('You   
+ have completed the quiz!');
   }
   nextButton.classList.add('hide');
 });
