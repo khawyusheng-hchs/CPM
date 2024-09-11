@@ -1,14 +1,31 @@
 const questions = [
   {
-    question: "What is web safety?",
+    question: "What is a Distributed Denial-of-Service (DDoS) attack?",
     answers: [
-      { text: "Answer 1", correct: false },
-      { text: "Answer 2", correct: false },
-      { text: "Answer 3", correct: true },
-      { text: "Answer 4", correct: false },
+      { text: "An attempt to gain unauthorized access to a system", correct: false },
+      { text: "A type of malware that encrypts files", correct: false },
+      { text: "an attempt to make an online service unavailable by overwhelming it with traffic from multiple sources", correct: true },
+      { text: "A phishing scam", correct: false },
     ]
   },
-  // Add other questions here...
+  {
+    question: "How can you protect yourself from brute force attacks?",
+    answers: [
+      { text: "Use weak passwords", correct: false },
+      { text: "Disable two-factor authentication", correct: false },
+      { text: "Click on suspicious links", correct: false },
+      { text: "Use strong, unique passwords", correct: true },
+    ]
+  },
+    {
+    question: "What is SQL injection?",
+    answers: [
+      { text: "A type of malware that replicates itself", correct: false },
+      { text: "A technique used to exploit vulnerabilities in web applications", correct: true },
+      { text: "A type of phishing scam", correct: false },
+      { text: "A method of encrypting data", correct: false },
+    ]
+  },
 ];
 
 const questionElement = document.getElementById('question');
